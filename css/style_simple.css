@@ -1,6 +1,7 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    background: url(../imges/Photo_style.jpg) center center no-repeat;
+    /* background: url(../imges/Photo_style.jpg) center center no-repeat; */
+    background: url(../imges/Photo_inner.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -37,12 +38,13 @@
     flex-shrink: 0;
     flex-grow: 0;
 }
-/* 說明文字 */
-.simple_txt{
-    padding-bottom: 2em;
-}
 .wrap_simple_plain .swiper_pic img{
     width: 280px;
+}
+/* 說明文字 */
+.simple_txt{
+    text-align: justify;
+    padding-bottom: 2em;
 }
 /* 連結 */
 .plain_link{

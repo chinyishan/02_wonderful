@@ -1,6 +1,7 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    background: url(../img/main/title_back/Photoer_price.jpg) 0 0 no-repeat;
+    /* background: url(../img/main/title_back/Photoer_price.jpg) 0 0 no-repeat; */
+    background: url(../imges/Photo_inner.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }

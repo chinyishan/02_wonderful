@@ -1,6 +1,7 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    background: url(../imges/Photo_work.jpg) no-repeat center center;
+    /* background: url(../imges/Photo_work.jpg) no-repeat center center; */
+    background: url(../imges/Photo_inner.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -364,22 +365,14 @@ div.swiper-button-next , div.swiper-button-prev{
 #owl-photoer .owl-dots{
     padding: 1em;
 }
-.wrap_introduce_other .col{
-    /* padding: 1em; */
-}
 .photoer_group{
     position: relative;
 }
 .photoer_pic{
-    overflow: hidden;
     box-shadow: 10px 10px 0px 0px var(--c-bg-yellow);
+    border-radius: 10px;
+    overflow: hidden;
     margin: 0 auto;
-}
-.photoer_pic a{
-    transition: .8s 0s ease;
-}
-.photoer_pic a:hover{
-    transform: scale(1.1);
 }
 .photoer_txt{
     position: absolute;
@@ -413,5 +406,11 @@ div.swiper-button-next , div.swiper-button-prev{
     }
     .photoer_txt h3{
         font-size: 1.2em;
+    }
+    .photoer_pic a{
+        transition: .8s 0s ease;
+    }
+    .photoer_pic a:hover{
+        transform: scale(1.1);
     }
 }

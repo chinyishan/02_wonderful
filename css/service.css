@@ -1,11 +1,12 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    background: url(../imges/Photo_service.jpg) no-repeat center center;
+    /* background: url(../imges/Photo_service.jpg) no-repeat center center; */
+    background: url(../imges/Photo_inner.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* 拍攝服務 ============================================== */
+/* 拍攝服務 ================================= */
 .wrap_service{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -19,7 +20,7 @@
     margin: 0 auto;
 }
 .wrap_service .row .col{
-    padding: 0 3em;
+    padding: 0 3em 2em;
 }
 .service_icon{
     width: 60%;
@@ -34,9 +35,97 @@
     padding-bottom: 15px;
     text-align: center;
 }
+.service_txt p{
+    text-align: justify;
+}
+/* 拍攝服務 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_service .row .col{
+        padding: 0 1em 0;
+    }
+}
+/* 拍攝服務 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_service .row .col{
+        padding: 0 1.5em 0;
+    }
+}
 
 /* 棚內攝影 ============================= */
 .wrap_studio_inside{
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.wrap_studio_inside .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.wrap_studio_inside .row .col{
+    padding: 0 2em;
+}
+.photostudio_pic{
+    margin-bottom: 15px;
+}
+.photostudio_txt{
+    text-align: justify;
+}
+/* 棚內攝影 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_studio_inside .row{
+        width: 90%;
+    }
+    .wrap_studio_inside .row .col{
+        padding: 0 1em;
+    }
+}
+/* 棚內攝影 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_studio_inside .row{
+        width: 90%;
+    }
+    .wrap_studio_inside .row .col{
+        padding: 0 2em;
+    }
+}
+
+/* 戶外攝影 ============================= */
+.wrap_studio_outdoor{
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.wrap_studio_outdoor .row{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.wrap_studio_outdoor .row .col{
+    padding: 0 2em;
+}
+.photostudio_pic{
+    margin-bottom: 15px;
+}
+.photostudio_txt{
+    text-align: justify;
+}
+/* 戶外攝影 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_studio_outdoor .row{
+        width: 90%;
+    }
+    .wrap_studio_outdoor .row .col{
+        padding: 0 1em;
+    }
+}
+/* 戶外攝影 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_studio_outdoor .row{
+        width: 90%;
+    }
+    .wrap_studio_outdoor .row .col{
+        padding: 0 2em;
+    }
 }

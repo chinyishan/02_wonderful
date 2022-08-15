@@ -229,7 +229,7 @@ h3.about_slogn span{
 .wrap_style{
     background: url(../imges/back/squared_texture_1200.jpg) repeat 0 0 / 600px auto;
     padding: 80px 0;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .wrap_style .row{
     display: flex;

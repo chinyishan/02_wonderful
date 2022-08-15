@@ -1,6 +1,7 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    background: url(../imges/Photo_service.jpg) no-repeat center center;
+    /* background: url(../imges/Photo_service.jpg) no-repeat center center; */
+    background: url(../imges/Photo_inner.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }

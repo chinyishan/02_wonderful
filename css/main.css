@@ -29,7 +29,6 @@ span{
     display: block;
 }
 
-
 /* header 導覽列 ===================================== */
 .wrap_header{
     position: sticky;
@@ -92,7 +91,6 @@ span{
 #nav_switch{
     display: none;
 }
-
 
 /* 手機 */
 @media screen and (max-width:768px){
@@ -232,7 +230,7 @@ p{
     }
 }
 
-/* 內頁白字上標題 ====================== */
+/* 內頁 大標位置 ====================== */
 .inner_page{
     width: 100%;
     height: 26em;
@@ -243,9 +241,9 @@ p{
     text-align: center;
 }
 .inner_page h2{
-    color: var(--c-bg-white);
+    color: var(--c-title-sub);
     font-family: var(--font-Noto);
-    font-weight: 300;
+    font-weight: 400;
 }
 .inner_page span{
     font-size: 2.4em;
@@ -269,7 +267,7 @@ h2.inner_title span{
     display: inline-block;
     color: var(--c-title-main);
     font-family: var(--font-Noto);
-    font-size: 1.2em;
+    font-size: 1.4em;
     letter-spacing: .2em;
     /* padding-bottom: .8em; */
 }
@@ -277,12 +275,15 @@ h2.inner_title small{
     display: inline-block;
     color: var(--c-btn-swiper);
     font-family: var(--font-Caveat);
-    font-size: .8em;
+    font-size: 1.1em;
 }
 /* 內頁標題 平板直/橫 md */
 @media screen and (min-width:768px){}
 /* 內頁標題 平板橫、桌機 lg */
 @media screen and (min-width:1024px){
+    h2.inner_title{
+        width: 100%;
+    }
     h2.inner_title span{
         font-size: 1.5em;
     }
