@@ -17,6 +17,10 @@
     width: 100%;
     margin: 0 auto;
 }
+.studio_txt_inside{
+    width: 90%;
+    text-align: justify;
+}
 .panel{
     height: 30em;
     border-radius: 50px;

@@ -163,7 +163,7 @@ h3.about_slogn span{
     font-family: var(--font-Noto);
     color: var(--c-btn-swiper);
     background: rgb(255, 255, 255, .8);
-    box-shadow: 1px 1px 0px 3px var(--c-btn-swiper);
+    border: 3px solid var(--c-btn-swiper);
     border-radius: 50%;
     transform: .3s;
 }
@@ -255,7 +255,7 @@ h3.about_slogn span{
     width: 30%;
     height: 50%;
     background: url(../imges/main/element_clip.png) no-repeat 0 0 / 100% auto ;
-    transform: translateY(-40%);
+    transform: translateY(-46%);
     z-index: 2;
 }
 h3.style_txt{
@@ -269,8 +269,8 @@ h3.style_txt span{
     display: block;
     color: var(--c-p);
     font-family: var(--font-Caveat);
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: .1em;
     padding: 5px 0;
 }
 /* 主題風格 平板直/橫 md */
@@ -387,12 +387,6 @@ h3.style_txt span{
         left: 12%;
         padding: 1em;
     }
-    .photoer_pic a{
-        transition: .8s 0s ease;
-    }
-    .photoer_pic a:hover{
-        transform: scale(1.1);
-    }
 }
 /* 攝影師 平板橫、桌機 lg */
 @media screen and (min-width:1024px){
@@ -406,6 +400,12 @@ h3.style_txt span{
     }
     .photoer_txt p{
         font-size: 1em;
+    }
+    .photoer_pic a{
+        transition: .8s 0s ease;
+    }
+    .photoer_pic a:hover{
+        transform: scale(1.1);
     }
 }
 

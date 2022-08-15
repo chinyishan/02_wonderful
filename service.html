@@ -18,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@200;300&family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.carousel/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
 <body>
@@ -60,8 +65,8 @@
                 <span>服務事項</span>
                 <small>/ service matters</small>
             </h2>
-            <div class="row">
-                <div class="col">
+            <ul class="row">
+                <li class="col col-12 col-md-4 col-lg-4">
                     <div class="service_icon">
                         <img src="./imges/service_pet.png" alt="service_1">
                     </div>
@@ -69,8 +74,8 @@
                         <h3>寵物攝影&寵物與我</h3>
                         <p>用心打造多種獨特專屬毛小孩拍攝的攝影空間，運用攝影師的專業引導，為毛小孩紀錄不同時期的樣子，拍下屬於您們的溫暖畫面。</p>
                     </div>
-                </div>
-                <div class="col">
+                </li>
+                <div class="col col-12 col-md-4 col-lg-4">
                     <div class="service_icon">
                         <img src="./imges/service_camera.png" alt="service_2">
                     </div>
@@ -79,7 +84,7 @@
                         <p>期待與各家毛寵廠商合作!讓寵物產業更加蓬勃發展!曾與東森寵物雲、熊爸訓練室等合作拍攝。</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-md-4 col-lg-4">
                     <div class="service_icon">
                         <img src="./imges/service_love.png" alt="service_3">
                     </div>
@@ -88,7 +93,7 @@
                         <p>希望能透過影像盡一份心力，讓愛寵物的您看到資訊也能分享。</p>
                     </div>
                 </div>
-            </div>
+            </ul>
         </div>
     </section>
 
@@ -99,33 +104,32 @@
                 <span>棚內攝影</span>
                 <small>/ inside studio</small>
             </h2>
-            <div class="row">
-                <p>想要不受天氣限制，拍出不同美麗的場景照片嗎? 我們擁有專為寵物打造的各色場景，可根據想要的主題做出選擇。</p>
+            <div class="row photostudio_inside">
+                <div class="col col-12 col-md-6 col-lg-6 photostudio_swiper inside_pic">
+                    <div class="inside_group owl-carousel owl-theme" id="owl-inside">
+                        <div class="swiper_pic">
+                            <img src="./imges/inside_1.jpg" alt="inside_1">
+                        </div>
+                        <div class="swiper_pic">
+                            <img src="./imges/inside_2.jpg" alt="inside_2">
+                        </div>
+                        <div class="swiper_pic">
+                            <img src="./imges/inside_3.jpg" alt="inside_3">
+                        </div>
+                        <div class="swiper_pic">
+                            <img src="./imges/them_style_3.jpg" alt="inside_4">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div class="panel_inside active_in">
-                    <img src="./imges/studio_1.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>單色素背</h3>
-                    </a>
-                </div>
-                <div class="panel_inside">
-                    <img src="./imges/studio_2.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>現代家景</h3>
-                    </a>
-                </div>
-                <div class="panel_inside">
-                    <img src="./imges/studio_3.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>風趣可愛</h3>
-                    </a>
-                </div>
-                <div class="panel_inside">
-                    <img src="./imges/studio_4.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>復古懷舊</h3>
-                    </a>
+                <div class="col col-12 col-md-6 col-lg-6 photostudio_txt">
+                    <p>想要不受天氣限制，拍出不同美麗的場景照片嗎? 我們擁有專為寵物打造的各色場景，可根據想要的主題做出選擇。</p>
+                </div>            
+            </div>
+            <div class="row">
+                <div class="more">
+                    <a href="./studio_photography.html">了解更多</a>
                 </div>
             </div>
         </div>
@@ -138,32 +142,7 @@
                 <span>戶外攝影</span>
                 <small>/ outdoor studio</small>
             </h2>
-            <div class="row">
-                <div class="paneloutdoor active_out">
-                    <img src="./imges/studio_1.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>陽光綠地</h3>
-                    </a>
-                </div>
-                <div class="paneloutdoor">
-                    <img src="./imges/studio_2.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>夢幻花園</h3>
-                    </a>
-                </div>
-                <div class="paneloutdoor">
-                    <img src="./imges/studio_3.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>主題樂園</h3>
-                    </a>
-                </div>
-                <div class="paneloutdoor">
-                    <img src="./imges/studio_4.jpg" alt="studio_1">
-                    <a class="studio_potogr_title">
-                        <h3>山間田野</h3>
-                    </a>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -236,40 +215,5 @@
         </div>
     </footer>
 
-    <!-- 手風琴控制器 panel -->
-    <script>
-        const panelsInside = document.querySelectorAll('.panel_inside');
-
-        panelsInside.forEach(panel_inside =>{
-            panel_inside.addEventListener('click', ()=>{
-                removeActiveClasses()
-                panel_inside.classList.add('active_in')
-            })
-        })
-
-        function removeActiveClasses(){
-            panelsInside.forEach(panel_inside =>{
-                panel_inside.classList.remove('active_in')
-            })
-        }
-    </script>
-
-    <!-- 手風琴控制器 panel -->
-    <script>
-        const panelsOutdoor = document.querySelectorAll('.panel_outdoor');
-
-        panelsOutdoor.forEach(panel_outdoor =>{
-            panel_outdoor.addEventListener('click', ()=>{
-                removeActiveClasses()
-                panel_outdoor.classList.add('active_out')
-            })
-        })
-
-        function removeActiveClasses(){
-            panelsOutdoor.forEach(panel =>{
-                panel_outdoor.classList.remove('active_out')
-            })
-        }
-    </script>
 </body>
 </html>

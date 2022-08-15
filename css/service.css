@@ -13,182 +13,30 @@
 .wrap_service .row{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 40px 0 0;
+    margin: 0 auto;
+}
+.wrap_service .row .col{
+    padding: 0 3em;
+}
+.service_icon{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.service_txt h3{
+    color: var(--c-title-sub);
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    font-family: var(--font-Noto);
+    padding-bottom: 15px;
+    text-align: center;
 }
 
 /* 棚內攝影 ============================= */
 .wrap_studio_inside{
     padding-top: 60px;
     padding-bottom: 60px;
-}
-.wrap_studio_inside .row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    width: 100%;
-    margin: 0 auto;
-}
-.panel_inside{
-    height: 30em;
-    border-radius: 50px;
-    cursor: pointer;
-    flex: 1;
-    margin: 0 .2em;
-    position: relative;
-    -webkit-transition: all .4s ease-in;
-    overflow: hidden;
-}
-.panel_inside img{
-    height: 100%;
-    object-fit: cover;
-}
-.studio_potogr_title{
-    display: none;
-    position: absolute;
-    background: rgba(0, 0, 0, .5);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 1em;
-}
-.panel_inside h3{
-    color: var(--c-bg-white);
-    font-size: 2em;
-    font-family: var(--font-Noto);
-    font-size: 1.2em;
-    font-weight: 200;
-    text-align: center;
-    bottom: 2em;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    opacity: 0;
-    white-space: nowrap;
-}
-.panel_inside.active_in{
-    flex: 6;
-}
-.panel_inside.active_in .studio_potogr_title{
-    display: block;
-}
-.panel_inside.active_in h3 {
-    letter-spacing: .2em;
-    line-height: 1.2em;
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
-}
-/* 棚內攝影 平板直/橫 md */
-@media screen and (min-width:768px){
-    .wrap_studio_inside .row{
-        width: 90%;
-    }
-    .panel_inside{
-        flex: 0.6;
-    }
-}
-/* 棚內攝影 平板橫、桌機 lg */
-@media screen and (min-width:1024px){
-    .wrap_studio_inside .row{
-        width: 80%;
-    }
-    .panel_inside{
-        height: 30em;
-        border-radius: 50px;
-        cursor: pointer;
-        flex: 0.5;
-        margin: 0 .5em;
-        position: relative;
-        -webkit-transition: all .4s ease-in;
-        overflow: hidden;
-    }
-}
-
-/* 戶外攝影 ============================= */
-.wrap_studio_outdoor{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.wrap_studio_outdoor .row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    width: 100%;
-    margin: 0 auto;
-}
-.panel_outdoor{
-    height: 30em;
-    border-radius: 50px;
-    cursor: pointer;
-    flex: 1;
-    margin: 0 .2em;
-    position: relative;
-    -webkit-transition: all .4s ease-in;
-    overflow: hidden;
-}
-.panel_outdoor img{
-    height: 100%;
-    object-fit: cover;
-}
-.studio_potogr_title{
-    display: none;
-    position: absolute;
-    background: rgba(0, 0, 0, .5);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding: 1em;
-}
-.panel_outdoor h3{
-    color: var(--c-bg-white);
-    font-size: 2em;
-    font-family: var(--font-Noto);
-    font-size: 1.2em;
-    font-weight: 200;
-    text-align: center;
-    bottom: 2em;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    opacity: 0;
-    white-space: nowrap;
-}
-.panel_outdoor.active_out{
-    flex: 6;
-}
-.panel_outdoor.active_out .studio_potogr_title{
-    display: block;
-}
-.panel_outdoor.active_out h3 {
-    letter-spacing: .2em;
-    line-height: 1.2em;
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
-}
-/* 戶外攝影 平板直/橫 md */
-@media screen and (min-width:768px){
-    .wrap_studio_inside .row{
-        width: 90%;
-    }
-    .panel_outdoor{
-        flex: 0.6;
-    }
-}
-/* 戶外攝影 平板橫、桌機 lg */
-@media screen and (min-width:1024px){
-    .wrap_studio_outdoor .row{
-        width: 80%;
-    }
-    .panel_outdoor{
-        height: 30em;
-        border-radius: 50px;
-        cursor: pointer;
-        flex: 0.5;
-        margin: 0 .5em;
-        position: relative;
-        -webkit-transition: all .4s ease-in;
-        overflow: hidden;
-    }
 }
