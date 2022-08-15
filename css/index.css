@@ -167,13 +167,6 @@ h3.about_slogn span{
     border-radius: 50%;
     transform: .3s;
 }
-.owl-nav button span:hover{
-    color: var(--c-bg-white);
-    background: var(--c-btn-pink);
-    box-shadow: 1px 1px 0px 3px var(--c-btn-pink);
-    border-radius: 50%;
-    transition: .3s;
-}
 #owl-outdoor .owl-dots, 
 #owl-inside .owl-dots{
     position: absolute;
@@ -205,12 +198,16 @@ h3.about_slogn span{
     .wrap_photostudio .photostudio_inside{
         flex-direction: row-reverse;
     }
+    .owl-nav button span:hover{
+        color: var(--c-bg-white);
+        background: var(--c-btn-pink);
+        box-shadow: 1px 1px 0px 3px var(--c-btn-pink);
+        border-radius: 50%;
+        transition: .3s;
+    }
 }
 /* 戶外、棚內攝影 平板橫、桌機 lg */
 @media screen and (min-width:1024px){
-    .wrap_photostudio .photostudio_outdoor{
-        /* flex-direction: row; */
-    }
     .wrap_photostudio .photostudio_inside{
         flex-direction: row-reverse;
     }
@@ -242,12 +239,6 @@ h3.about_slogn span{
 }
 .wrap_style .row .col{
     padding: 5% 2%;
-}
-.wrap_style .row .col a{
-    transition: .5s 0s ease;
-}
-.wrap_style .row .col a:hover{
-    transform: rotate(5deg);
 }
 .wrap_style .col a{
     padding: 10px 10px 15px;
@@ -286,6 +277,12 @@ h3.style_txt span{
 @media screen and (min-width:768px){
     .wrap_style .row .col{
         padding: 3% 2%;
+    }
+    .wrap_style .row .col a{
+        transition: .5s 0s ease;
+    }
+    .wrap_style .row .col a:hover{
+        transform: rotate(5deg);
     }
 }
 /* 主題風格 平板橫、桌機 lg */
@@ -346,12 +343,6 @@ h3.style_txt span{
     box-shadow: 10px 10px 0px 0px var(--c-bg-yellow);
     margin: 0 auto;
 }
-.photoer_pic a{
-    transition: .8s 0s ease;
-}
-.photoer_pic a:hover{
-    transform: scale(1.1);
-}
 .photoer_txt{
     position: absolute;
     bottom: 0;
@@ -395,6 +386,12 @@ h3.style_txt span{
     .photoer_txt{
         left: 12%;
         padding: 1em;
+    }
+    .photoer_pic a{
+        transition: .8s 0s ease;
+    }
+    .photoer_pic a:hover{
+        transform: scale(1.1);
     }
 }
 /* 攝影師 平板橫、桌機 lg */
