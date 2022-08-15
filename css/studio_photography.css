@@ -1,0 +1,94 @@
+/* 內頁 上標題 圖片 ====================== */
+.inner_page{
+    background: url(../imges/Photo_service.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* 棚內攝影 ============================= */
+.wrap_studio_photogr{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.wrap_studio_photogr .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+.panel{
+    height: 30em;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 .2em;
+    position: relative;
+    -webkit-transition: all .4s ease-in;
+    overflow: hidden;
+}
+.panel img{
+    height: 100%;
+    object-fit: cover;
+}
+.studio_potogr_title{
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 1em;
+}
+.panel h3{
+    color: var(--c-bg-white);
+    font-size: 2em;
+    font-family: var(--font-Noto);
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    white-space: nowrap;
+}
+.panel.active{
+    flex: 6;
+}
+.panel.active .studio_potogr_title{
+    display: block;
+}
+.panel.active h3 {
+    letter-spacing: .2em;
+    line-height: 1.2em;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+/* 棚內攝影 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_studio_photogr .row{
+        width: 90%;
+    }
+    .panel{
+        flex: 0.6;
+    }
+}
+/* 棚內攝影 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_studio_photogr .row{
+        width: 80%;
+    }
+    .panel{
+        height: 30em;
+        border-radius: 50px;
+        cursor: pointer;
+        flex: 0.5;
+        margin: 0 .5em;
+        position: relative;
+        -webkit-transition: all .4s ease-in;
+        overflow: hidden;
+    }
+}

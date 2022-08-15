@@ -1,0 +1,139 @@
+/* 內頁 上標題 圖片 ====================== */
+.inner_page{
+    background: url(../imges/Photo_style.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 簡單素背 ================================ */
+.wrap_simple_plain{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.wrap_simple_plain .row{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.wrap_simple_plain .row .col{
+    padding: 0 1em 1.5em;
+}
+/* 輪播 */
+.simple_swiper{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3em 0;
+}
+.wrap_simple_plain .simple_swiper .swiper_pic{
+    transition: .7s;
+    overflow: hidden;
+}
+.wrap_simple_plain .simple_swiper .swiper_pic:hover{
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+/* 說明文字 */
+.simple_txt{
+    padding-bottom: 2em;
+}
+.wrap_simple_plain .swiper_pic img{
+    width: 280px;
+}
+/* 連結 */
+.plain_link{
+    text-align: right;
+}
+.plain_link a{
+    display: inline-block;
+    color: var(--c-btn-pink);
+    border: 1px solid var(--c-btn-pink);
+    font-family: var(--font-Noto);
+    font-size: .8em;
+    font-weight: 200;
+    letter-spacing: .1em;
+    border-radius: 30px;
+    padding: .5em 10px;
+    margin: .8em 0 0;
+    transition: .5s 0s ease;
+}
+.plain_link a:hover{
+    box-shadow: 0px 0px 3px 2px rgba(230, 140, 130, .5);
+}
+/* 簡單素背 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_simple_plain .swiper_pic img{
+        width: 400px;
+    }
+}
+/* 簡單素背 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_simple_plain .swiper_pic img{
+        width: 600px;
+    }
+}
+
+/* 其他風格 =================================== */
+.wrap_other_style{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.wrap_other_style .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.wrap_other_style .row .col{
+    padding: 5% 2%;
+}
+.wrap_other_style .row .col a img{
+    transition: .5s 0s ease;
+}
+.wrap_other_style .row .col a:hover img{
+    transform: scale(1.1);
+}
+.style_pic{
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, .2);
+}
+h3.style_txt{
+    color: var(--c-title-sub);
+    font-family: var(--font-Noto);
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+/* 主題風格 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_other_style .row .col{
+        padding: 3% 2%;
+    }
+}
+/* 主題風格 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_other_style .row{
+        width: 80%;
+    }
+    .wrap_other_style .row .col{
+        padding: 3% 2%;
+    }
+    h3.style_txt{
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+    h3.style_txt span{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}

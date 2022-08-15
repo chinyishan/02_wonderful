@@ -1,0 +1,417 @@
+/* 內頁 上標題 圖片 ====================== */
+.inner_page{
+    background: url(../imges/Photo_work.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 內頁標題 ============================== */
+h3.style_title{
+    padding-bottom: 1em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid var(--c-p);
+}
+.style_txt .style_title span{
+    display: inline-block;
+    color: var(--c-title-sub);
+    font-family: var(--font-Noto);
+    font-size: 1.4em;
+    letter-spacing: .2em;
+}
+.style_txt .style_title small{
+    display: inline-block;
+    color: var(--c-sub);
+    font-family: var(--font-Noto);
+    font-size: .8em;
+    letter-spacing: .2em;
+}
+
+/* 攝影師介紹 =========================================== */
+.wrap_introduce{
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(#E0D6CE 8% , transparent 0), 
+                var(--c-bg-orange);
+    background-size: calc(.8em + .8em) calc(.8em + .8em);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.introduce_book{
+    margin: 50px auto 0;
+}
+.book_cover{
+    display: none;
+}
+.book_page{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1.5em;
+}
+.book_page .book_pic{
+    border-left: 10px solid var(--c-bg-white);
+    border-right: 10px solid var(--c-bg-white);
+    border-top: 10px solid var(--c-bg-white);
+    border-bottom: 50px solid var(--c-bg-white);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    margin: 0 auto .2em;
+}
+.book_page p{
+    display: none;
+}
+.book_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+.book_txt span{
+    display: inline-block;
+    color: var(--c-sub);
+    font-family: var(--font-Noto);
+    font-size: 1em;
+    font-weight: 200;
+    padding-right: 1em;
+}
+.book_txt h3{
+    display: inline-block;
+    color: var(--c-title-main);
+    font-family: var(--font-Caveat);
+    font-size: 3em;
+    letter-spacing: .2em;
+    padding-bottom: .5em;
+}
+.book_txt p:nth-child(3){
+    padding-bottom: 1em;
+}
+.book_txt p:nth-child(5){
+    color: var(--c-title-small);
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+/* 攝影師 平板直/橫 md */
+@media screen and (min-width:768px){
+    .book_page{
+        width: 40%;
+    }
+    .book_main{
+        width: 60%;
+    }
+}
+/* 攝影師 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_introduce{
+        background: none;
+    }
+    .wrap_introduce .container{
+        margin: 0 auto;
+    }
+    .introduce_book{
+        position: relative;
+        width: 26em;
+        height: 33em;
+        background: radial-gradient(#E0D6CE 8% , transparent 0), var(--c-bg-orange);
+        background-size: calc(.8em + .8em) calc(.8em + .8em);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        box-shadow: 10px 20px 40px rgba(0, 0, 0, .3);
+        transition: 1s;
+        border-radius: 0 20px 20px 0;
+    }
+    .introduce_book:hover{
+        transform: translateX(50%);
+    }
+    .introduce_book .book_content{
+        position: relative;
+        width: 26em;
+        height: 33em;
+        z-index: 1;
+        transform-origin: left;
+        transform-style: preserve-3d;
+        transition: 1s;
+        border-radius: 0 20px 20px 0;
+        background: radial-gradient(#E0D6CE 8% , transparent 0), 
+                    var(--c-bg-orange);
+        background-size: calc(.8em + .8em) calc(.8em + .8em);
+    }
+    .introduce_book:hover .book_content{
+        position: relative;
+        transform: rotateY(-180deg);
+        box-shadow: 10px 20px 40px rgba(0, 0, 0, .3);
+    }
+    .book_content .book_cover{
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        object-fit: cover;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        border-radius: 0 20px 20px 0;
+        overflow: hidden;
+        background: var(--c-btn-swiper);
+    }
+    .book_cover img{
+        width: 40%;
+        margin: auto auto 0;
+        filter: sepia(50%);
+        border: 3px solid var(--c-bg-white);
+    }
+    .book_cover h3{
+        color: var(--c-bg-white);
+        font-family: var(--font-Noto);
+        font-size: 2em;
+        letter-spacing: .2em;
+        padding-bottom: .5em;
+        text-align: center;
+        padding: .5em 0;
+        margin: 0 auto auto;
+    }
+    .book_cover p{
+        color: var(--c-bg-white);
+        font-family: var(--font-Noto);
+        font-size: 1em;
+        padding-bottom: .5em;
+        text-align: center;
+        padding: 1em 1em;
+    }
+    .book_page{
+        width: 100%;
+        margin: auto;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+    .book_page .book_pic{
+        width: 60%;
+        margin: 0 auto 1.5em;
+    }
+    .book_page p{
+        display: block;
+        color: var(--c-title-sub);
+        font-family: var(--font-Noto);
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: .2em;
+        line-height: 1.8em;
+        text-align: center;
+    }
+    .book_main{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 70%;
+    }
+}
+
+/* 攝影作品 ============================================== */
+.wrap_work{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.wrap_work .container{
+    position: relative;
+}
+.wrap_work .container::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 120%;
+    background: url(../imges/main/screen.png) no-repeat center center / 120% auto;
+    z-index: -1;
+    top: 6%;
+    right: center;
+}
+.wrap_work .container .row{
+    display: flex;
+    justify-content: center;
+}
+/* 選擇 */
+div.style_choose{
+    text-align: center;
+    margin: 3em auto ;
+}
+.style_btn a{
+    color: var(--c-p);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .2em;
+    padding: 1em .2em;
+    margin: 0 10px;
+    transition: .5s 0s ease;
+}
+.style_btn a:hover{
+    color: var(--c-btn-pink);
+    border-bottom: 2px solid var(--c-btn-pink);
+}
+.style_active a{
+    color: var(--c-btn-pink);
+    border-bottom: 2px solid var(--c-btn-pink);
+}
+/* 輪播 */
+.swiper-wrapper{
+    width: 100%;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 大圖 mySwiper2 */
+.wrap_work div.mySwiper2 {
+    width: 75%;
+    margin: 0 auto;
+    padding: 2em 0 2em;
+}
+/* 小縮圖 mySwiper2 */
+.mySwiper {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+/* 輪播按鈕 */
+div.swiper-button-next , div.swiper-button-prev{
+    color: var(--c-bg-white);
+}
+/* 攝影作品 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_work .container::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 120%;
+        background: url(../imges/main/screen.png) no-repeat center center / 110% auto;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    /* 大圖 mySwiper2 */
+    .wrap_work div.mySwiper2 {
+        width: 70%;
+        margin: 0 auto;
+        padding: 4em 0 4em;
+    }
+    /* 小縮圖 mySwiper2 */
+    .mySwiper {
+        width: 70%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+}
+/* 攝影作品 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_work .container::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 120%;
+        background: url(../imges/main/screen.png) no-repeat center center / 80% auto;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    /* 大圖 mySwiper2 */
+    .wrap_work div.mySwiper2 {
+        width: 50%;
+        margin: 0 auto;
+        padding: 4em 0 4em;
+    }
+    /* 小縮圖 mySwiper2 */
+    .mySwiper {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+}
+
+/* 其他攝影師 ============================================ */
+.wrap_introduce_other{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+.wrap_introduce_other .container{
+    margin: 0 auto;
+}
+.wrap_introduce_other .row{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2em 0 0;
+    width: 90%;
+}
+#owl-photoer .owl-nav{
+    display: none;
+}
+#owl-photoer .owl-dots{
+    padding: 1em;
+}
+.wrap_introduce_other .col{
+    /* padding: 1em; */
+}
+.photoer_group{
+    position: relative;
+}
+.photoer_pic{
+    overflow: hidden;
+    box-shadow: 10px 10px 0px 0px var(--c-bg-yellow);
+    margin: 0 auto;
+}
+.photoer_pic a{
+    transition: .8s 0s ease;
+}
+.photoer_pic a:hover{
+    transform: scale(1.1);
+}
+.photoer_txt{
+    position: absolute;
+    background: var(--c-bg-white);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, .5);
+    bottom: 3%;
+    left: 0;
+    padding: .4em .6em;
+    z-index: 4;
+}
+.photoer_txt h3{
+    display: inline-block;
+    color: var(--c-title-sub);
+    font-family: var(--font-Noto);
+    font-size: .8em;
+    letter-spacing: .2em;
+}
+/* 攝影師 平板直/橫 md */
+@media screen and (min-width:768px){
+    .photoer_pic{
+        width: 100%;
+    }
+}
+/* 攝影師 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .photoer_txt{
+        bottom: 3%;
+        left: 0;
+        padding: .6em 1em;
+        z-index: 4;
+    }
+    .photoer_txt h3{
+        font-size: 1.2em;
+    }
+}

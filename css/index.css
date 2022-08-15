@@ -1,0 +1,532 @@
+/* Banner ====================================== */
+.wrap_banner{
+    width: 100%;
+}
+.content_banner .row{
+    position: relative;
+}
+.banner_logo{
+    position: absolute;
+    width: 60%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Banner 平板直/橫 md */
+@media screen and (min-width:768px){
+    .banner_lg{
+        display: none;
+    }
+}
+/* Banner 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .banner_sm{
+        display: none;
+    }
+    .banner_lg{
+        display: block;
+    }
+    .banner_logo{
+        width: 30%;
+    }
+}
+
+/* 拍攝服務 ================================== */
+.wrap_serve{
+    padding: 80px 0 120px;
+    margin: 0 auto;
+}
+h3.about_slogn{
+    color: var(--c-title-small);
+    font-size: 1.6em;
+    line-height: 42px;
+    letter-spacing: 5px;
+    font-family: var(--font-Noto);
+    text-align: center;
+    padding-bottom: 20px;
+}
+h3.about_slogn span{
+    color: #aaa;
+    font-size: 1em;
+    letter-spacing: 2px;
+    display: block;
+    font-family: var(--font-Caveat);
+}
+.wrap_serve .row{
+    display: flex;
+    justify-content: center;
+}
+.serve_about .col{
+    position: relative;
+    max-width: 30em;
+    background: var(--c-bg-orange);
+    padding: 3em;
+    text-align: center;
+    border-radius: 50%;
+}
+.serve_about .col::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 60%;
+    background: url(../imges/main/cat_cut_mirror.png) no-repeat 0 0 / 100% auto;
+    z-index: 2;
+    left: 0%;
+    bottom: -30%;
+    transform: rotate(-60deg);
+}
+.serve_about .more a{
+    margin: 0 auto;
+}
+/* 拍攝服務 平板直/橫 md */
+@media screen and (min-width:768px){
+    .serve_about .col::before{
+        width: 40%;
+        height: 60%;
+        left: -10%;
+        bottom: -30%;
+    }
+}
+/* 拍攝服務 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .serve_about .col::before{
+        width: 50%;
+        height: 70%;
+        left: -30%;
+        bottom: -15%;
+    }
+}
+/* @keyframes borderanima_serve{
+    0%{
+        border-radius: 60% 50% 50% 60% / 60% 60% 50% 50%;
+    }
+    25%{
+        border-radius: 55% 45% 45% 55% / 55% 55% 45% 45%;
+    }
+    50% {
+        border-radius: 50% 40% 40% 50% / 50% 50% 40% 40%;
+    }
+    75% {
+        border-radius: 55% 45% 45% 55% / 55% 55% 45% 45%;
+    }
+    100% {
+        border-radius: 58% 48% 48% 58% / 58% 58% 48% 48%;
+    }
+} */
+
+/* 戶外、棚內攝影 ================ */
+.wrap_photostudio{
+    padding: 0 0 80px;
+}
+.photostudio_outdoor ,
+.photostudio_inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 3em;
+}
+.wrap_photostudio .row .col{
+    max-width: 30em;
+    padding: 0 2em 1em;
+}
+.photostudio_txt h3{
+    color: var(--c-title-sub);
+    font-size: 1.4em;
+    letter-spacing: .2em;
+    font-family: var(--font-Noto);
+    padding-bottom: 15px;
+}
+.photostudio_swiper .swiper_pic{
+    border: 3px dotted var(--c-btn-swiper);
+    position: relative;
+    border-radius:50%;
+    overflow: hidden;
+}
+#owl-outdoor .owl-nav,
+#owl-inside .owl-nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 4em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.owl-nav button span{
+    display: block;
+    width: 1em;
+    height: 1em;
+    font-size: 2.5em;
+    line-height: .8em;
+    font-family: var(--font-Noto);
+    color: var(--c-btn-swiper);
+    background: rgb(255, 255, 255, .8);
+    box-shadow: 1px 1px 0px 3px var(--c-btn-swiper);
+    border-radius: 50%;
+    transform: .3s;
+}
+.owl-nav button span:hover{
+    color: var(--c-bg-white);
+    background: var(--c-btn-pink);
+    box-shadow: 1px 1px 0px 3px var(--c-btn-pink);
+    border-radius: 50%;
+    transition: .3s;
+}
+#owl-outdoor .owl-dots, 
+#owl-inside .owl-dots{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+.outdoor_group::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 50%;
+    background: url(../imges/main/photography_outdoor.png) no-repeat 0 0 / 100% auto ;
+    z-index: 2;
+}
+.inside_group::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 50%;
+    background: url(../imges/main/photography_studio.png) no-repeat 0 0 / 100% auto ;
+    z-index: 2;
+}
+/* 戶外、棚內攝影 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_photostudio .photostudio_outdoor{
+        flex-direction: row;
+    }
+    .wrap_photostudio .photostudio_inside{
+        flex-direction: row-reverse;
+    }
+}
+/* 戶外、棚內攝影 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_photostudio .photostudio_outdoor{
+        /* flex-direction: row; */
+    }
+    .wrap_photostudio .photostudio_inside{
+        flex-direction: row-reverse;
+    }
+    .owl-theme .owl-nav{
+        bottom: 4em;
+    }
+    .owl-nav button span{
+        font-size: 2.6em;
+        width: 1.2em;
+        height: 1.2em;
+        line-height: .9em;
+    }
+    .wrap_photostudio .row .col{
+        padding: 0 3em 0;
+    }
+}
+
+/* 主題風格 ================================== */
+.wrap_style{
+    background: url(../imges/back/squared_texture_1200.jpg) repeat 0 0 / 600px auto;
+    padding: 80px 0;
+    background-attachment: fixed;
+}
+.wrap_style .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrap_style .row .col{
+    padding: 5% 2%;
+}
+.wrap_style .row .col a{
+    transition: .5s 0s ease;
+}
+.wrap_style .row .col a:hover{
+    transform: rotate(5deg);
+}
+.wrap_style .col a{
+    padding: 10px 10px 15px;
+    background: var(--c-bg-white);
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, .2);
+}
+.style_pic{
+    position: relative;
+    margin-bottom: 1em;
+}
+.style_pic::before{
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 50%;
+    background: url(../imges/main/element_clip.png) no-repeat 0 0 / 100% auto ;
+    transform: translateY(-40%);
+    z-index: 2;
+}
+h3.style_txt{
+    color: var(--c-title-sub);
+    font-family: var(--font-Noto);
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+h3.style_txt span{
+    display: block;
+    color: var(--c-p);
+    font-family: var(--font-Caveat);
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 5px 0;
+}
+/* 主題風格 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_style .row .col{
+        padding: 3% 2%;
+    }
+}
+/* 主題風格 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_style .row .col{
+        padding: 3% 2%;
+    }
+    .style_pic::before{
+        transform: translateY(-39%);
+    }
+    h3.style_txt{
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+    h3.style_txt span{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+/* 攝影師 ================================== */
+.wrap_photoer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+.wrap_photoer .container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.wrap_photoer .row{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+#owl-photoer .owl-nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#owl-photoer .owl-dots{
+    padding: 1em;
+}
+.wrap_photoer .col{
+    padding: 1em;
+}
+.photoer_group{
+    position: relative;
+}
+.photoer_pic{
+    max-width: 38em;
+    border-radius: 250px;
+    overflow: hidden;
+    box-shadow: 10px 10px 0px 0px var(--c-bg-yellow);
+    margin: 0 auto;
+}
+.photoer_pic a{
+    transition: .8s 0s ease;
+}
+.photoer_pic a:hover{
+    transform: scale(1.1);
+}
+.photoer_txt{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    z-index: 5;
+    background: var(--c-bg-white);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, .5);
+    padding: .6em;
+}
+.photoer_txt h3{
+    display: inline-block;
+    color: var(--c-title-sub);
+    font-size: 1.2em;
+    letter-spacing: .2em;
+    font-family: var(--font-Noto);
+    padding-bottom: .8em;
+}
+.photoer_txt .good_style{
+    display: inline-block;
+    color: var(--c-p);
+    font-size: .3em;
+    padding-bottom: 2em;
+}
+.photoer_txt p{
+    color: var(--c-title-small);
+    font-size: .8em;
+    letter-spacing: .2em;
+    line-height: 1em;
+    font-family: var(--font-Noto);
+    font-weight: 400;
+}
+/* 攝影師 平板直/橫 md */
+@media screen and (min-width:768px){
+    .photoer_pic{
+        width: 100%;
+    }
+    #owl-photoer .owl-nav{
+        left: 5%;
+        right: 5%;
+    }
+    .photoer_txt{
+        left: 12%;
+        padding: 1em;
+    }
+}
+/* 攝影師 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    #owl-photoer .owl-nav{
+        left: 22%;
+        right: 22%;
+    }
+    .photoer_txt{
+        left: 5%;
+        padding: 1.2em;
+    }
+    .photoer_txt p{
+        font-size: 1em;
+    }
+}
+
+/* 價格方案 ================================== */
+.wrap_plan{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: radial-gradient(#E0D6CE 8% , transparent 0), var(--c-bg-orange);
+    background-size: calc(.8em + .8em) calc(.8em + .8em);
+}
+.wrap_plan .content_title,
+.wrap_plan .more{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.wrap_plan .row{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.wrap_plan .plan_list::before{
+    background: url(../imges/main/bigdog_run.png) no-repeat top center / 90% auto ;
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 40%;
+    z-index: 2;
+    top: -16%;
+    right: 0;
+}
+.wrap_plan .row .col{
+    display: flex;
+    padding: 0 2em;
+    margin-bottom: 2em;
+}
+.plan_content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #B9A89C;
+    padding: .8em;
+    background: rgb(255, 255, 255, .5);
+}
+.plan_pic{
+    padding-bottom: 1em;
+}
+.plan_main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+.plan_main h3{
+    color: var(--c-title-sub);
+    font-family: var(--font-Noto);
+    font-size: 1.4em;
+    letter-spacing: .2em;
+    padding-bottom: .5em;
+}
+.plan_txt{
+    flex-grow: 1;
+    padding-bottom: .7em;
+}
+.plan_pric{
+    color: var(--c-title-small);
+    font-family: var(--font-Noto);
+    font-size: 1.2em;
+    letter-spacing: .2em;
+    font-weight: 400;
+}
+/* 價格方案 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_plan .plan_list::before{
+        width: 30%;
+        height: 30%;
+        z-index: 2;
+        top: -25%;
+        right: 0;
+    }
+}
+/* 價格方案 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_plan .plan_list::before{
+        width: 30%;
+        height: 60%;
+        z-index: 2;
+        top: -70%;
+        right: 0;
+    }
+    .wrap_plan .row .col{
+        padding: 0 1em;
+    }
+}
+
+/* 聯絡我們 ================================== */
+.wrap_connect{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.wrap_connect .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wrap_connect .col{
+    padding: 0 30px;
+}
+.connect_txt{
+    padding-bottom: 15px;
+}
+.connect_map{
+    overflow: hidden;
+}
+.connect_map iframe{
+    vertical-align: top;
+}
+.wrap_connect iframe{
+    display: inline-block;
+}
