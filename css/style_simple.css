@@ -1,9 +1,8 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    background: url(../imges/Photo_inner.jpg) no-repeat center center / 60%;
+    background: url(../imges/Photo_inner.jpg) no-repeat center center / 30%;
     background-size: cover;
     background-attachment: fixed;
-    /* background: var(--c-btn-swiper); */
 }
 /* 內頁 上標題 圖片 平板直/橫 md */
 @media screen and (min-width:768px){

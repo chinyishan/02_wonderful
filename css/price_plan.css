@@ -1,9 +1,24 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    /* background: url(../img/main/title_back/Photoer_price.jpg) 0 0 no-repeat; */
-    background: url(../imges/Photo_inner.jpg) no-repeat center center;
+    background: url(../imges/Photo_inner.jpg) no-repeat center center / 30%;
     background-size: cover;
     background-attachment: fixed;
+}
+/* 內頁 上標題 圖片 平板直/橫 md */
+@media screen and (min-width:768px){
+    .inner_page{
+        background: url(../imges/Photo_inner.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+/* 內頁 上標題 圖片 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .inner_page{
+        background: url(../imges/Photo_inner.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
 
 /* 價格方案 ============================================ */
