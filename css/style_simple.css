@@ -111,12 +111,6 @@
 .wrap_other_style .row .col{
     padding: 5% 2%;
 }
-.wrap_other_style .row .col a img{
-    transition: .5s 0s ease;
-}
-.wrap_other_style .row .col a:hover img{
-    transform: scale(1.1);
-}
 .style_pic{
     position: relative;
     margin-bottom: 1em;
@@ -152,5 +146,11 @@ h3.style_txt{
     h3.style_txt span{
         font-size: 20px;
         letter-spacing: 2px;
+    }
+    .wrap_other_style .row .col a img{
+        transition: .5s 0s ease;
+    }
+    .wrap_other_style .row .col a:hover img{
+        transform: scale(1.1);
     }
 }
