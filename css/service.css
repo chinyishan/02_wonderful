@@ -1,6 +1,6 @@
 /* 內頁 上標題 圖片 ====================== */
 .inner_page{
-    background: url(../imges/Photo_inner.jpg) no-repeat center center / 30%;
+    background: var(--c-btn-swiper);
     background-size: cover;
     background-attachment: fixed;
 }
