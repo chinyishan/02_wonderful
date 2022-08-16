@@ -193,31 +193,32 @@ span{
 
 /* 文字共用 ========================= */
 .content_title{
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     text-align: center;
 }
 h2.title_main span{
-    color: #503D38;
+    color: var(--c-title-main);
+    font-family: var(--font-Noto);
     font-size: 1.6em;
     letter-spacing: .2em;
-    font-family: var(--font-Noto);
 }
 h2.title_main small{
-    color: #885042;
+    color: var(--c-title-small);
+    font-family: var(--font-Caveat);
     font-size: 1.3em;
     letter-spacing: .2em;
     display: block;
-    font-family: var(--font-Caveat);
     padding: 6px 0;
 }
 p{
     font-size: 1em;
-    color: #606060;
+    color: var(--c-p);
     line-height: 2em;
     letter-spacing: 2px;
     font-family: var(--font-Noto);
     font-weight: 200;
 }
+/* 文字共用 平板直/橫 md */
 @media screen and (min-width:768px){
     h2.title_main span{
         font-size: 2em;
@@ -227,6 +228,12 @@ p{
     }
     p{
         font-size: 1em;
+    }
+}
+/* 文字共用 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .content_title{
+        padding-bottom: 50px;
     }
 }
 
@@ -278,7 +285,7 @@ h2.inner_title small{
     font-size: 1.1em;
 }
 /* 內頁標題 平板直/橫 md */
-@media screen and (min-width:768px){}
+/* @media screen and (min-width:768px){} */
 /* 內頁標題 平板橫、桌機 lg */
 @media screen and (min-width:1024px){
     h2.inner_title{
@@ -296,7 +303,7 @@ h2.inner_title small{
 .more{
     text-align: center;
     margin: 0 auto;
-    padding-top: 1.6em;
+    padding-top: 1.2em;
 }
 .more a{
     font-size: 1em;

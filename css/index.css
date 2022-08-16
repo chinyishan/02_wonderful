@@ -125,7 +125,9 @@ h3.about_slogn span{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 0 3em;
+}
+.photostudio_inside{
+    padding: 0 0 4em;
 }
 .wrap_photostudio .row .col{
     max-width: 30em;
