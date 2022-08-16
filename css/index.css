@@ -153,17 +153,18 @@ h3.about_slogn span{
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 2;
 }
 .owl-nav button span{
     display: block;
-    width: 1em;
-    height: 1em;
-    font-size: 2.5em;
-    line-height: .8em;
-    font-family: var(--font-Noto);
     color: var(--c-btn-swiper);
     background: rgb(255, 255, 255, .8);
     border: 3px solid var(--c-btn-swiper);
+    font-family: var(--font-Noto);
+    font-size: 2.5em;
+    line-height: .8em;
+    width: 1em;
+    height: 1em;
     border-radius: 50%;
     transform: .3s;
 }
@@ -201,7 +202,7 @@ h3.about_slogn span{
     .owl-nav button span:hover{
         color: var(--c-bg-white);
         background: var(--c-btn-pink);
-        box-shadow: 1px 1px 0px 3px var(--c-btn-pink);
+        border: 3px solid var(--c-btn-pink);
         border-radius: 50%;
         transition: .3s;
     }
