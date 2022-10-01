@@ -19,7 +19,6 @@ ol, ul {
 a{
 	display: block;
 	text-decoration: none;
-    /* cursor: url(../imges/main/paw_small.png) , pointer; */
 }
 img{
 	width: 100%;
@@ -199,21 +198,21 @@ span{
 h2.title_main span{
     color: var(--c-title-main);
     font-family: var(--font-Noto);
-    font-size: 1.6em;
-    letter-spacing: .2em;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 h2.title_main small{
     color: var(--c-title-small);
     font-family: var(--font-Caveat);
-    font-size: 1.3em;
+    font-size: 18px;
     letter-spacing: .2em;
     display: block;
     padding: 6px 0;
 }
 p{
-    font-size: 1em;
+    font-size: 16px;
     color: var(--c-p);
-    line-height: 2em;
+    line-height: 30px;
     letter-spacing: 2px;
     font-family: var(--font-Noto);
     font-weight: 200;
@@ -237,28 +236,44 @@ p{
     }
 }
 
-/* 內頁 大標位置 ====================== */
+/* 內頁 大標題位置 ====================== */
 .inner_page{
     width: 100%;
-    height: 26em;
+    height: 320px;
+    background: url(../imges/Photo_inner_376.jpg) no-repeat center center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-size: cover;
 }
-.inner_page h2{
+/* 內頁 上標題 圖片 平板直/橫 md */
+@media screen and (min-width:768px){
+    .inner_page{
+        background: url(../imges/Photo_inner_768.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+/* 內頁 上標題 圖片 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .inner_page{
+        background: url(../imges/Photo_inner.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+.inner_page h1{
     color: var(--c-title-sub);
     font-family: var(--font-Noto);
     font-weight: 400;
 }
 .inner_page span{
-    font-size: 2.4em;
-    letter-spacing: .3em;
-    padding-bottom: .5em;
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
 }
 .inner_page span + span{
-    font-size: 1em;
+    font-size: 16px;
     letter-spacing: .6em;
 }
 
@@ -276,7 +291,6 @@ h2.inner_title span{
     font-family: var(--font-Noto);
     font-size: 1.4em;
     letter-spacing: .2em;
-    /* padding-bottom: .8em; */
 }
 h2.inner_title small{
     display: inline-block;
@@ -284,8 +298,6 @@ h2.inner_title small{
     font-family: var(--font-Caveat);
     font-size: 1.1em;
 }
-/* 內頁標題 平板直/橫 md */
-/* @media screen and (min-width:768px){} */
 /* 內頁標題 平板橫、桌機 lg */
 @media screen and (min-width:1024px){
     h2.inner_title{
@@ -303,7 +315,7 @@ h2.inner_title small{
 .more{
     text-align: center;
     margin: 0 auto;
-    padding-top: 1.2em;
+    padding-top: 20px;
 }
 .more a{
     font-size: 1em;
@@ -341,15 +353,16 @@ h2.inner_title small{
     width: 240px;
 }
 .wrap_footer .studio_title{
+    font-size: 18px;
+    font-weight: 400;
     font-family: var(--font-Noto);
     letter-spacing: 6px;
-    font-weight: 400;
-    border-bottom: 1px solid var(--c-bg-white);
     margin-bottom: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid var(--c-bg-white);
 }
 .studio_txt{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     font-family: var(--font-Noto);
     line-height: 18px;
@@ -366,15 +379,32 @@ h2.inner_title small{
     padding-bottom: 10px;
 }
 .studio_community a{
-    width: 20px;
+    width: 24px;
     display: inline-block;
+}
+@media screen and (max-width:767px){
+    .studio_title{
+        font-size: 16px;
+    }
+    .studio_txt{
+        font-size: 14px;
+    }
+    .studio_logo{
+        display: none;
+    }
+    .studio_link{
+        display: none;
+    }
+    .wrap_copy{
+        font-size: 12px;
+    }
 }
 /* copy ============== */
 .wrap_copy{
     border-top: 1px solid rgba(255 ,255 ,255 ,.5);
     text-align: center;
     opacity: .8;
-    font-size: 10px;
+    font-size: 12px;
     font-family: var(--font-Noto);
     font-weight: 200;
     letter-spacing: 2px;
@@ -387,6 +417,8 @@ h2.inner_title small{
     line-height: 16px;
     padding: 0 20px 20px;
 }
+
+/* top 鍵 */
 .paw_up{
     position: fixed;
     width: 60px;
@@ -394,9 +426,9 @@ h2.inner_title small{
     bottom: 3%;
     right: 2%;
     transition: width .5s 0s ease;
-    animation: pawup 4s  infinite;
+    animation: pawUp 4s  infinite;
 }
-@keyframes pawup{
+@keyframes pawUp{
     0%{
         width: 60px;
     }
@@ -409,18 +441,4 @@ h2.inner_title small{
 }
 .paw_up:hover{
     width: 70px;
-}
-@media screen and (max-width:767px){
-    .studio_title{
-        font-size: 10px;
-    }
-    .studio_txt{
-        font-size: 10px;
-    }
-    .studio_logo{
-        display: none;
-    }
-    .wrap_copy{
-        font-size: 8px;
-    }
 }

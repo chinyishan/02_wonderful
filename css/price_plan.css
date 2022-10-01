@@ -1,45 +1,22 @@
-/* 內頁 上標題 圖片 ====================== */
-.inner_page{
-    background: var(--c-btn-swiper);
-    background-size: cover;
-    background-attachment: fixed;
-}
-/* 內頁 上標題 圖片 平板直/橫 md */
-@media screen and (min-width:768px){
-    .inner_page{
-        background: url(../imges/Photo_inner.jpg) no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-/* 內頁 上標題 圖片 平板橫、桌機 lg */
-@media screen and (min-width:1024px){
-    .inner_page{
-        background: url(../imges/Photo_inner.jpg) no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-
 /* 價格方案 ============================================ */
-.price_plan_wrap{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.wrap_price_plan{
+    padding: 60px 0;
 }
-.price_plan_wrap .row{
+.wrap_price_plan .row{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    padding-top: 60px;
 }
-.price_plan_wrap .row .col{
-    padding: 0 20px;
+.wrap_price_plan .row:nth-child(3){
+    flex-direction: row-reverse;
 }
-.price_plan_pic{
-    width: 560px;
+.wrap_price_plan .row .col{
+    width: 80%;
+    padding: 20px;
 }
-.price_plan_pic img{
+.wrap_price_plan .price_plan_pic{
     width: 100%;
 }
 .price_plan_title{
@@ -48,19 +25,23 @@
 .price_plan_title span{
     display: inline-block;
     font-size: 60px;
-    color: #803A29;
+    color: var(--c-title-small);
     font-family: 'Caveat', cursive;
     margin-right: 10px;
 }
 .price_plan_title h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--c-title-sub);
+    font-family: 'Noto Sans TC', sans-serif;
     display: inline-block;
 }
 .price_plan_date{
-    color: #606060;
-    font-size: 16px;
-    line-height: 28px;
+    color: var(--c-title-sub);
+    font-size: 18px;
+    line-height: 30px;
     margin-bottom: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-family: 'Noto Sans TC', sans-serif;
 }
 .price_plan_txt{
@@ -68,61 +49,104 @@
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 300;
 }
-
+/* 拍攝地點加價 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_price_plan .row .col{
+        width: 40%;
+    }
+}
+/* 拍攝地點加價 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_price_plan .row .col{
+        width: 45%;
+    }
+}
 
 /* 加價項目 ============================================ */
-.markup_items_wrap{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.wrap_markup_items{
+    padding: 60px 0;
 }
-.markup_items_wrap .row{
+.wrap_markup_items .row{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    padding-top: 60px;
 }
-.markup_items_wrap .row .col{
-    padding: 0 40px;
+.wrap_markup_items .row .col{
+    width: 80%;
+    padding: 20px;
+}
+.wrap_markup_items .price_plan_pic{
+    width: 100%;
+}
+/* 拍攝地點加價 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_markup_items .row .col{
+        width: 40%;
+    }
+}
+/* 拍攝地點加價 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_markup_items .row .col{
+        width: 45%;
+    }
 }
 
 /* 拍攝地點加價 ============================================ */
-.location_price_wrap{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.wrap_location_price{
+    padding: 60px 0;
 }
-.location_price_wrap .row{
+.wrap_location_price .row{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* margin-bottom: 60px; */
+    padding-top: 60px;
 }
-.location_price_wrap .row .col{
-    padding: 0 40px;
+.wrap_location_price .row .col{
+    width: 80%;
+    padding: 20px;
+}
+.wrap_location_price .price_plan_pic{
+    width: 100%;
+}
+/* 拍攝地點加價 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_location_price .row .col{
+        width: 40%;
+    }
+}
+/* 拍攝地點加價 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_location_price .row .col{
+        width: 45%;
+    }
 }
 
 /* 加價商品 ============================================ */
-.commodity_wrap{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.wrap_commodity{
+    padding: 60px 0;
 }
-.commodity_wrap .row{
+.wrap_commodity .row{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.commodity_date{
-    font-size: 24px;
+.wrap_commodity .commodity_date{
+    font-size: 20px;
+    font-weight: 400;
     text-align: center;
-    padding-bottom: 50px;
+    padding: 50px 0;
+    color: var(--c-title-sub);
+    font-family: 'Noto Sans TC', sans-serif;
 }
-.commodity_wrap .col{
-    width: 280px;
-    padding: 0 30px 60px 30px;
+.wrap_commodity .col{
+    width: 40%;
+    padding: 20px;
 }
 .commodity_pic{
-    width: 280px;
     border-radius: 5%;
     overflow: hidden;
     margin-bottom: 10px;
@@ -135,4 +159,19 @@
     letter-spacing: 2px;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 300;
+    line-height: 24px;
+}
+/* 加價商品 平板直/橫 md */
+@media screen and (min-width:768px){
+    .wrap_commodity .col{
+        width: 23%;
+        padding: 0 30px 60px 30px;
+    }
+}
+/* 加價商品 平板橫、桌機 lg */
+@media screen and (min-width:1024px){
+    .wrap_commodity .col{
+        width: 26%;
+        padding: 0 30px 60px 30px;
+    }
 }

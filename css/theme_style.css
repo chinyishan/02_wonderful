@@ -1,26 +1,3 @@
-/* 內頁 上標題 圖片 ====================== */
-.inner_page{
-    background: var(--c-btn-swiper);
-    background-size: cover;
-    background-attachment: fixed;
-}
-/* 內頁 上標題 圖片 平板直/橫 md */
-@media screen and (min-width:768px){
-    .inner_page{
-        background: url(../imges/Photo_inner.jpg) no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-/* 內頁 上標題 圖片 平板橫、桌機 lg */
-@media screen and (min-width:1024px){
-    .inner_page{
-        background: url(../imges/Photo_inner.jpg) no-repeat center center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-
 /* 主題風格 ============================================== */
 .wrap_style{
     padding-top: 60px;
